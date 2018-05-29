@@ -120,3 +120,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = "/home/infest58/loyality/static"
+ALLOWED_HOSTS = ['infest58.pythonanywhere.com','127.0.0.1']

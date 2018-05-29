@@ -5,6 +5,10 @@ class Customer(models.Model):
 	patronymic = models.CharField(max_length=50)
 	last_name = models.CharField(max_length=50)
 	bdate = models.DateField('Date')
+	card = models.CharField(max_length=50)
+	phone = models.CharField(max_length=20)
+	#check = models.CharField(max_length=50, unique=True)
+	summ = models.DecimalField(max_digits=10, decimal_places=2, default = 0)
 
 	class Meta:
 		verbose_name = "Customer"
