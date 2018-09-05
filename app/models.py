@@ -9,6 +9,9 @@ class Customer(models.Model):
 	phone = models.CharField(max_length=20)
 	#check = models.CharField(max_length=50, unique=True)
 	summ = models.DecimalField(max_digits=10, decimal_places=2, default = 0)
+	city = models.CharField(max_length=50,blank=True)
+	street = models.CharField(max_length=250,blank=True)
+	email = models.EmailField(max_length=70,blank=True)
 
 	class Meta:
 		verbose_name = "Customer"
